@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CategoryController {
     @RequestMapping("admin/category")
     public String category() {
-        return "admin/category";
+        return "admin/category/index";
     }
 
     @RequestMapping("admin/add-category")
     public String addCategory() {
-        return "admin/add-category";
+        return "admin/category/add";
     }
 }
