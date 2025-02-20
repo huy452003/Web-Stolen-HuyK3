@@ -1,6 +1,6 @@
 package com.webhuyk3.services.impl;
 
-import com.webhuyk3.models.User;
+import com.webhuyk3.entitys.User;
 import com.webhuyk3.repositorys.UserRepository;
 import com.webhuyk3.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

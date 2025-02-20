@@ -1,4 +1,4 @@
-package com.webhuyk3.models;
+package com.webhuyk3.entitys;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;

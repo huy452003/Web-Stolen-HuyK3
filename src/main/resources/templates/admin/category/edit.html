@@ -18,15 +18,15 @@
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
-<!--            <h1>-->
-<!--                Blank page-->
-<!--                <small>it all starts here</small>-->
-<!--            </h1>-->
-<!--            <ol class="breadcrumb">-->
-<!--                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>-->
-<!--                <li><a href="#">Examples</a></li>-->
-<!--                <li class="active">Blank page</li>-->
-<!--            </ol>-->
+            <!--            <h1>-->
+            <!--                Blank page-->
+            <!--                <small>it all starts here</small>-->
+            <!--            </h1>-->
+            <!--            <ol class="breadcrumb">-->
+            <!--                <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>-->
+            <!--                <li><a href="#">Examples</a></li>-->
+            <!--                <li class="active">Blank page</li>-->
+            <!--            </ol>-->
         </section>
 
         <!-- Main content -->
@@ -40,17 +40,24 @@
                     </div>
                     <!-- /.box-header -->
                     <!-- form start -->
-                    <form role="form" method="post" th:action="@{/admin/add-category}" th:object="${category}">
+                    <form role="form" method="post" th:action="@{/admin/edit-category}" th:object="${category}">
+                        <input type="hidden" class="form-control" id="exampleInputEmail" th:field="*{id}">
                         <div class="box-body">
                             <div class="form-group">
-                                <label for="exampleInputEmail1">Category Name</label>
+                                <label for="exampleInputEmail1">Category ID</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1"
+                                       placeholder="Enter Category ID" th:field="*{id}">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Category Name</label>
+                                <input type="text" class="form-control" id="exampleInputEmail2"
                                        placeholder="Enter Category Name" th:field="*{categoryName}">
                             </div>
 
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Category Amount</label>
-                                <input type="text" class="form-control" id="exampleInputEmail2" th:field="*{categoryAmount}">
+                                <input type="text" class="form-control" id="exampleInputEmail3" th:field="*{categoryAmount}">
                             </div>
 
                             <div class="form-group">
@@ -71,7 +78,7 @@
                         <!-- /.box-body -->
 
                         <div class="box-footer">
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Update</button>
                         </div>
                     </form>
                 </div>

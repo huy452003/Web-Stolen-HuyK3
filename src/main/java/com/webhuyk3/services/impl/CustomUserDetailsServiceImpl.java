@@ -1,8 +1,8 @@
 package com.webhuyk3.services.impl;
 
-import com.webhuyk3.models.CustomUserDetails;
-import com.webhuyk3.models.User;
-import com.webhuyk3.models.User_Role;
+import com.webhuyk3.entitys.CustomUserDetails;
+import com.webhuyk3.entitys.User;
+import com.webhuyk3.entitys.User_Role;
 import com.webhuyk3.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
